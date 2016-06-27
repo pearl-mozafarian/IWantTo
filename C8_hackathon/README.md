@@ -8,7 +8,7 @@ A one-stop-shop to find something new online using YouTube, Twitter, and Spotify
 
 ###Future Improvements:
 
->1.Store nouns searched for future randomization.
->2.Better responsiveness.
->3.tweet back.
->4.keyboard handling.
+> - Store nouns searched for future randomization.
+> - Better responsiveness.
+> - tweet back.
+> - keyboard handling.
