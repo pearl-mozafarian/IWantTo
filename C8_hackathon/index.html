@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="iwantto" name="I Want To"/>
+    <meta content="author" name="Erika O'Neil, Morvarid Mozafarian, Jon Rasmussen, Betsy Gottesman, Eugene Kwon"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,900' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+    <title>I Want To...</title>
+</head>
+<body>
+<div id="music-background">
+    <div id="music-background-cover"></div>
+</div>
+<header class="main-heading">
+    <h1>I Want To...</h1>
+</header>
+<section class="container">
+    <a href="#" id="startOverBtn" class="start-over-btn">Start Over</a>
+    <!--<a id="twitter-share-button" class="twitter-share-button" target="_blank" href="https://twitter.com/intent/tweet">-->
+        <!--<img id="twitter_btn_logo" src="image/Twitter_logo_white.png"> Tweet-->
+    <!--</a>-->
+
+    <div id="selectPrev" class="prev glyphicon glyphicon-chevron-left btn"></div>
+
+    <div id="landing" class="col-md-12">
+        <div class="mdl-selectfield">
+            <select id="verbSelect" class="verb select-element">
+                <option value="watch">watch</option>
+                <option value="read">read</option>
+                <option value="listen">listen to</option>
+            </select>
+        </div>
+        <div class="col-md-12">
+            <p class="blurb">something about</p>
+        </div>
+        <div class="col-md-12">
+            <div class="input-container">
+                <input type="text" id="nounInput" class="noun col-md-12">
+                <div class="border"></div>
+            </div>
+        </div>
+        <div class="button-group row">
+            <div class="col-md-12">
+                <a href="#" id="nowButton" class="now-button">NOW</a>
+            </div>
+            <div class="col-md-12 rb-wrapper">
+                <a href="#" id="random-btn" class="random-button">Randomize</a>
+            </div>
+        </div>
+    </div>
+    <div id="read">
+        <div class="media well tweets" id="tweet1">
+            <a class="media-left tweets-pic" href="#">
+                <img class="media-object avatar" data-src="..." src="" alt="Generic placeholder image">
+            </a>
+            <div class="media-body tweet-box">
+                <div class="tweets-username">
+                    <h3 class="media-heading name"></h3>
+                    <h4 class="media-heading userName"></h4>
+                </div>
+                <div class="text"></div>
+                <div class="shares">
+                    <span class="glyphicon glyphicon-retweet"></span>
+                    <span class="retweets"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="favorites"></span>
+                </div>
+            </div>
+        </div>
+        <div class="media well tweets" id="tweet2">
+            <a class="media-left tweets-pic" href="#">
+                <img class="media-object avatar" data-src="..." src="" alt="Generic placeholder image">
+            </a>
+            <div class="media-body tweet-box">
+                <div class="tweets-username">
+                    <h3 class="media-heading name"></h3>
+                    <h4 class="media-heading userName"></h4>
+                </div>
+                <div class="text"></div>
+                <div class="shares">
+                    <span class="glyphicon glyphicon-retweet"></span>
+                    <span class="retweets"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="favorites"></span>
+                </div>
+            </div>
+        </div>
+        <div class="media well tweets" id="tweet3">
+            <a class="media-left tweets-pic" href="#">
+                <img class="media-object avatar" data-src="..." src="" alt="Generic placeholder image">
+            </a>
+            <div class="media-body tweet-box">
+                <div class="tweets-username">
+                    <h3 class="media-heading name"></h3>
+                    <h4 class="media-heading userName"></h4>
+                </div>
+                <div class="text"></div>
+                <div class="shares">
+                    <span class="glyphicon glyphicon-retweet"></span>
+                    <span class="retweets"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="favorites"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="watch" class="col-md-12">
+        <iframe id="ytplayer" src="" frameborder="0"></iframe>
+
+    </div>
+
+    <div id="listen" class="col-md-offset-1 col-md-10">
+        <div id="listenInfoDiv">
+            <div id="albumArt" class=""><img src="" id="pic"></div>
+            <div id="insideInfo" class="">
+                <p id="artistName" class=""></p>
+                <p id="albumName" class=""></p>
+                <p id="songName" class=""></p>
+                <a id="linkForAudio" href="">
+                    <div id="audioLink" class="">
+                        <img id="spotify" src="image/spotify.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="audioControls" class="">
+            <audio controls id="audio" src=""></audio>
+        </div>
+    </div>
+
+    <div id="error" class="col-md-offset-1 col-md-10">
+        <h1>We couldn't find what you were looking for. Try again!</h1>
+    </div>
+
+    <div id="selectNext" class="next glyphicon glyphicon-chevron-right btn"></div>
+
+</section>
+</body>
+</html>
+

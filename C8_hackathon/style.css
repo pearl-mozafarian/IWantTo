@@ -1,0 +1,562 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 8px;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1850px !important;
+    max-height: 500px !important;
+    background-color: lightseagreen;
+    background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+    background-size: 90px 90px;
+
+}
+.container {
+    position: relative;
+    margin: auto 0;
+    max-width: 100vw;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+section > div {
+    margin-top: 50px;
+}
+
+.main-heading {
+    font-size: 4em;
+    text-shadow: 0 5px 4px #344152;
+    color: #fff;
+    background-color: transparent;
+}
+
+.main-heading > h1 {
+    font-size: 1em;
+    text-shadow: 0 2px 6px #344152;
+    color: #fff;
+    font-weight: 900;
+}
+
+.blurb{
+    margin-right: 0 !important;
+    font-size: 4em;
+    text-shadow: 0 2px 6px #344152;
+    color: white;
+    font-weight: 900;
+}
+
+/********* input styles *********/
+
+.input-container {
+    clear:both;
+    position: relative;
+    left: 50%;
+    width: 400px;
+    height: 110px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+input[type=text] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 3em;
+    text-align: center;
+
+}
+select option {
+    font-size: 16px;
+    font-weight: bold;
+}
+input[type=text]:hover{
+    cursor: pointer;
+}
+
+.border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 0;
+    height: 2px;
+    padding: 0;
+    margin: 0;
+    background-color: #BA68C8;
+    transition: .2s width ease-out;
+}
+
+.border--animate {
+    width: 100%;
+}
+
+/* / end of input styles */
+
+/********* button styles *********/
+
+a.start-over-btn {
+    position: absolute;
+    top: -5%;
+    left: 0%;
+    text-shadow: 0 1px 1px #344152;
+    text-decoration: none;
+    color: white;
+    width: 115px;
+    height: 50px;
+    background-color: #ef5350;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 8px -2px #000;
+    transition: all 0.2s;
+}
+
+a.start-over-btn:active {
+    top: -2px;
+    box-shadow: 0 7px 0 0 #000;
+}
+
+.button-group{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+a.now-button {
+    text-shadow: 0 1px 1px #344152;
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    height: 80px;
+    top: 10px;
+    background: #8BC34A;
+    position: relative;
+    padding: 14px 50px;
+    font-size: 45px;
+    border-radius: 10px;
+    box-shadow: 0 7px 8px -2px #000;
+    transition: all 0.2s;
+}
+
+a.now-button:active {
+    top: 18px;
+    box-shadow: 0 7px 0 0 #000;
+}
+
+.rb-wrapper{
+    margin-top: 50px;
+}
+
+a.random-button {
+    text-shadow: 0 1px 1px #344152;
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    margin-top: 20px;
+    height: 70px;
+    background: #BA68C8;
+    position: relative;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 8px -2px #000;
+    transition: all 0.2s;
+}
+
+a.random-button:active {
+    top: 8px;
+    box-shadow: 0 7px 0 0 #000;
+}
+
+.prev, .next {
+    color: white;
+    font-size: 5vh;
+    padding: 3vh;
+    position: fixed;
+    top: 30vh;
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 0%;
+}
+
+/*end of button styles*/
+
+
+/************** Select input styles ***************/
+select {
+    background-color: transparent;
+    width: 400px;
+    padding: 0 0 0 170px;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    font-size: 3em;
+    margin: 3vh 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Remove focus */
+select:focus {
+    outline: none;
+}
+
+select:hover {
+    color: #BA68C8;
+    border-bottom: 2px solid #BA68C8;
+    cursor: pointer;
+}
+
+/* Use custom arrow */
+.mdl-selectfield select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+.mdl-selectfield {
+    position: relative;
+}
+
+/*End of select input style*/
+
+.prev {
+    left: 1%
+}
+
+#listen {
+    height: 80vh;
+}
+
+#read {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#music-background {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    background-size: cover;
+    width: 105vw;
+    height: 110vh;
+    position: fixed;
+    top: -5vh;
+    left: -2vw;
+    z-index: -1;
+}
+
+#music-background-cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.42);
+    position: absolute;
+    border: 5px solid white;
+}
+
+.tweets {
+    width: 42%;
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 3px 3px 18px -1px black;
+}
+
+div.tweet-box, div.tweet-box>div, div.tweet-box>div>h3, div.tweet-box>div>h4 {
+    text-align: left;
+}
+
+div.tweet-box>div>h3 {
+    font-weight: 700;
+}
+
+
+#error {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+    top: 30vh;
+}
+
+.glyphicon.glyphicon-apple {
+    font-size: 30px;
+}
+
+#start-over {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
+
+#ytplayer {
+    box-shadow: 0 7px 8px -2px #000;
+}
+
+/**************************************************** TOP SECRET ***************************************************/
+
+.secret{
+    position: fixed;
+}
+
+.secret-image {
+    max-width: 886px;
+}
+
+/******************************************listen page***********************************************/
+#listen {
+    position: relative;
+}
+
+#listenInfoDiv {
+    font-size: 0;
+    position: relative;
+    width: 100vh;
+    height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    box-shadow: 0 7px 8px -2px #000;
+}
+#insideInfo {
+    height:100%;
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    background-color: rgba(64,64,64,0.4);
+    position: relative;
+    padding-top: 2%;
+}
+#albumName, #songName,/* #audioLink,*/ #artistName {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 3%;
+    font-size: 2vw;
+    height: 25%;
+    /*background-color: rgba(255,255,255,0.9);*/
+}
+
+#linkForAudio {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+}
+
+#spotify {
+    height: 4vh;
+}
+
+#spotify:hover {
+    transform: scale(1.1);
+}
+
+#audioControls {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    top: 10%;
+}
+
+#audio {
+    box-shadow: 0 7px 8px -2px #000;
+}
+
+#albumArt {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    font-size: 1vw;
+}
+
+.track-info {
+    display: inline-block;
+}
+
+i.track-info,
+span.track-info {
+    color: #282828;
+    margin-right: 10px;
+}
+
+#pic {
+    width: 100%;
+    height: 100%;
+}
+/*#twitter-share-button {*/
+    /*position: fixed;*/
+    /*top: 5%;*/
+    /*left: 10%;*/
+/*}*/
+a.twitter-share-button {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    text-shadow: 0 1px 1px #344152;
+    text-decoration: none;
+    color: white;
+    width: 115px;
+    height: 50px;
+    background-color: #55acee;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 8px -2px #000;
+    transition: all 0.2s;
+}
+#twitter_btn_logo {
+    width:20px;
+    height:20px;
+}
+/*you tube player*/
+#ytplayer {
+    width: 50vw;
+    height: 30vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,5%);
+}
+
+@media screen and (max-width: 1030px) and (orientation: landscape) {
+    a.start-over-btn {
+        left: 0;
+    }
+    #listenInfoDiv {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+    }
+    #audioControls {
+        top:0;
+    }
+}
+
+@media screen and (max-width: 1030px) and (orientation: portrait) {
+    * {
+        font-size: 16px;
+    }
+    /*watch page*/
+    .prev {
+        left: -10%;
+        padding: 3%;
+    }
+    .next {
+        padding:3%;
+        right: -10%;
+    }
+    .prev, .next {
+        font-size: 5vw;
+    }
+    a.start-over-btn {
+        width: 200px;
+        height: 80px;
+        font-size: 35px;
+    }
+    a.start-over-btn:active {
+        top:-3%;
+    }
+    #ytplayer {
+        width: 60vw;
+        height: 70vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-10%);
+    }
+    /*read page*/
+    #read {
+        width: 110%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-80%);
+    }
+    #twitter-share-button {
+        display: none !important;
+    }
+    /*listen page*/
+    #music-background{
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+        background-size: cover;
+        width: 200vw;
+        height: 140vh;
+        position: fixed;
+        top: -5vh;
+        left: -2vw;
+        z-index: -1;
+    }
+    #listen {
+        width: 100%;
+        height: 100%;
+    }
+
+    #listenInfoDiv {
+        font-size: 0;
+        position: relative;
+        width: 60vw;
+        height: 60vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -90%);
+        box-shadow: 0 7px 8px -2px #000;
+    }
+    #audioControls {
+        margin: auto;
+        top: 10%;
+        left:-5%;
+    }
+    /*landing page*/
+    .container {
+        padding: 20% 0;
+        height: 90vh;
+    }
+    h1 {
+        padding-top: 5%;
+    }
+    .blurb {
+        padding: 5% 0;
+    }
+    input {
+        width: 500px;
+    }
+    select {
+        padding-left: 20%;
+        text-align: center;
+    }
+    .select-element option{
+        text-align: center;
+        float: left;
+        overflow: hidden;
+        font-size: 12px;
+        padding-left: -50px !important ;
+        font-weight:bold ;
+    }
+    .rb-wrapper {
+        padding-top: 5%;
+    }
+    a.random-button {
+        width: 250px;
+        margin-top: 20px;
+        height: 90px;
+        padding: 10px 30px;
+        font-size: 30px;
+    }
+
+}
